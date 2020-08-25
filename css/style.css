@@ -28,6 +28,7 @@
   float: right;
   font-size: 12px;
   padding: 14px 12px;
+  text-decoration: none;
   transition: color 0.3s;
 }
 
@@ -146,6 +147,7 @@
   color: #fff;
   font-size: 12px;
   padding: 14px 20px;
+  text-decoration: none;
   transition: all 0.3s;
 }
 
@@ -195,16 +197,17 @@
 }
 
 .Sns_nav_item{
-  color: #74cfae;
   display: inline-block;
   font-size: 45px;
   width: 185px;
 }
 
 .Sns_nav_pic{
-  display: block;
   background-color: #f2f2f2;
+  color: #74cfae;
+  display: block;
   padding: 20px 0;
+  text-decoration: none;
   transition: all 0.8s;
 }
 
