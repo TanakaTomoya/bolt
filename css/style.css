@@ -15,6 +15,8 @@
 .header{
   background-color: #fff;
   padding: 15px 0;
+  position: fixed;
+  width: 100%;
 }
 
 .fa-bolt{
@@ -52,12 +54,12 @@
   color: #74cfae;
   font-size: 90px;
   font-weight: 700;
-  padding-bottom: 20px;
 }
 
 .sub-title{
   color: #c0c0c0;
   font-size: 30px;
+  margin-top: 20px;
 }
 
 .section-WhatWeCanDo{
@@ -80,7 +82,6 @@
   font-size: 20px;
   line-height: 1.5;
   margin-top: 35px;
-  word-break: break-all;
 }
 
 .article-OurLatestWork{
@@ -88,7 +89,7 @@
 }
 
 .OurLatestWork-inner{
-  padding: 60px 0;
+  padding: 60px 0 70px 0;
 }
 
 .OurLatestWork{
@@ -97,8 +98,7 @@
 }
 
 .PhotoGallery{
-  padding-top: 40px;
-  padding-bottom: 90px;
+  margin-top: 40px;
 }
 
 .PG_nav{
@@ -107,15 +107,15 @@
 
 .PG_nav_item{
   display: inline-block;
-  margin-right: 100px;
+  margin-left: 100px;
 }
 
-.PG_nav_item:nth-child(n+3){
+.PG_nav_item:nth-child(n+4){
   margin-top: 80px;
 }
 
-.PG_nav_item:nth-child(3n){
-  margin-right: 0;
+.PG_nav_item:nth-child(3n+1){
+  margin-left: 0;
 }
 
 .PG_nav_pic{
@@ -132,7 +132,7 @@
   font-size: 12px;
   align-items: flex-start;
   justify-content: center;
-  padding-bottom: 70px;
+  margin-top: 90px;
 }
 
 .text-Email{
@@ -166,16 +166,19 @@
 .OurSkills{
   color: #fff;
   font-size: 24px;
-  padding-bottom: 70px;
+}
+
+.img-Load{
+  margin-top: 70px;
 }
 
 .OS_nav_item{
   display: inline-block;
-  margin-right: 180px;
+  margin-left: 180px;
 }
 
-.OS_nav_item:last-child{
-  margin-right: 0;
+.OS_nav_item:first-child{
+  margin-left: 0;
 }
 
 .OS_nav_text{
@@ -227,3 +230,146 @@
   color: #fff;
   text-align: right;
 }
+
+@media screen and (max-width: 1197px) {
+  /* 959px以下に適用されるCSS（タブレット用） */
+
+.inner{
+  width: 97%;
+}
+
+.WhatWeCanDo-inner{
+  display: block;
+  padding-bottom: 25px;
+}
+
+.WhatWeCanDo{
+  margin-top: 20px;
+}
+
+.WhatWeCanDo-comment{
+  width: 1050px;
+  margin: 35px auto;
+  margin-bottom: 0;
+}
+
+.WhatWeCanDo-comment br{
+  display: none;
+}
+
+.PG_nav_item{
+  display: block;
+  margin: 0;
+}
+
+.PG_nav_item:nth-child(n+4){
+  margin-top: 0;
+}
+
+.PG_nav_item:nth-child(4){
+  margin-top: 80px;
+}
+
+.section-Email{
+  display: block;
+  margin-top: 80px;
+}
+
+.text-Email{
+  margin-right: 0;
+}
+
+.text-Email br{
+  display: none;
+}
+
+.Email-button{
+  display: inline-block;
+  margin-top: 40px;
+}
+
+.OS_nav_item{
+  display: block;
+  margin-top: 88px;
+  margin-left: 0;
+}
+
+} /* 959px以下に適用されるCSS（タブレット用）終 */
+
+@media screen and (max-width: 767px) {
+  /* 480px以下に適用されるCSS（スマホ用） */
+
+.Contact-button{
+  display: none;
+}
+
+.BurgerMenu{
+  float: right;
+	position: relative;
+	width: 30px;
+  height: 20px;
+  padding: 10px;
+	cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.Burger_line{
+	position: absolute;
+	left: 10px;
+	width: 30px;
+	height: 3px;
+	background-color: #ddd;
+}
+.Burger_line1{
+	top: 11px;
+}
+.Burger_line2{
+	top: 19px;
+}
+.Burger_line3{
+	top: 27px;
+}
+
+.main-title{
+  color: #74cfae;
+  font-size: 80px;
+}
+
+.title-inner{
+  padding-top: 160px;
+  padding-bottom: 130px;
+}
+
+.sub-title{
+  color: #c0c0c0;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.WhatWeCanDo-comment{
+  font-size: 20px;
+  line-height: 1.5;
+  margin-top: 35px;
+  width: 480px;
+}
+
+.WhatWeCanDo-comment br{
+  display: none;
+}
+
+.Sns-inner{
+  padding: 50px 0;
+  margin: 0;
+  width: 100%;
+}
+
+.Sns_nav{
+  padding: 0 15px;
+}
+
+.Sns_nav_item{
+  width: 100%;
+}
+  
+} /* 480px以下に適用されるCSS（スマホ用）終 */

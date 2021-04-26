@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Bolt - Free Bootstrap 3 Theme</title>
     <meta name="description" content="This is my portfolio site.">
-    <meta name="keywords" content="bolt, bootstrap, portfolio"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="bolt, bootstrap, portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/01857b53f2.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -19,6 +19,11 @@
         <div class="clearfix">
           <i class="fa fa-bolt" aria-hidden="true"></i>
           <a href="" class="Contact-button">Contact</a>
+          <div class="BurgerMenu">
+            <span class="Burger_line Burger_line1"></span>
+            <span class="Burger_line Burger_line2"></span>
+            <span class="Burger_line Burger_line3"></span>
+          </div>
         </div>
       </div>    <!-- ← このclassにコンテンツ幅の指定と中央寄せ -->
     </header>
@@ -27,8 +32,9 @@
 
       <div class="title">    <!-- ← このclassに背景色の指定、幅いっぱいのやつ -->
         <div class="inner title-inner">
-          <div class="main-title">Bolt Theme</div>
-          <div class="sub-title">FREE BOOTSTRAP THEME</div>
+          <h1 class="main-title">Bolt Theme</h1>
+          <!-- ここは下の要素のmargin topでとるのが綺麗 -->
+          <p class="sub-title">FREE BOOTSTRAP THEME</p>
         </div>    <!-- ← このclassにコンテンツ幅の指定と中央寄せ -->
       </div>
 
@@ -38,20 +44,21 @@
             <img src="img/iphone.png" alt="iPhone...">
           </div>
           <div class="WhatWeCanDo-block">
-            <h1 class="WhatWeCanDo">WHAT WE CAN DO?</h1>
-            <h1 class="WhatWeCanDo-comment">
+            <h2 class="WhatWeCanDo">WHAT WE CAN DO?</h2>
+            <p class="WhatWeCanDo-comment">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
               Lorem Ipsum has been the industry's standard dummy text ever since the <br>
               1500s, when an unknown printer took a galley of type and scrambled it to <br>
               make a type specimen book.
-            </h1>
+            </p>
           </div>
         </div>    <!-- ← このclassにコンテンツ幅の指定と中央寄せ -->
       </section>
 
       <article class="article-OurLatestWork">    <!-- ← このclassに背景色の指定、幅いっぱいのやつ -->
         <div class="inner OurLatestWork-inner">
-          <h1 class="OurLatestWork">OUR LATEST WORK</h1>
+          <h2 class="OurLatestWork">OUR LATEST WORK</h2>
+          <!-- ここもmargintopでとる -->
           <div class="PhotoGallery">
             <ul class="PG_nav">
               <li class="PG_nav_item"><a href="" class="PG_nav_pic"><img src="img/01.jpg" alt=""></a></li>
@@ -64,11 +71,11 @@
           </div>
 
           <div class="section-Email">
-            <h1 class="text-Email">
+            <p class="text-Email">
               Lorem Ipsum is simply dummy text of the printing and typesetting <br>
               industry. Lorem Ipsum has been the industry's standard dummy <br>
               text ever.
-            </h1>
+            </p>
             <a href="" class="Email-button">Email Me!</a>
           </div>
         </div>    <!-- ← このclassにコンテンツ幅の指定と中央寄せ -->
@@ -76,13 +83,14 @@
 
       <section class="section-OurSkills">    <!-- ← このclassに背景色の指定、幅いっぱいのやつ -->
         <div class="inner OurSkills-inner">
-          <h1 class="OurSkills">OUR SKILLS</h1>
+          <h2 class="OurSkills">OUR SKILLS</h2>
           <div class="img-Load">
             <ul class="OS_nav">
-              <li class="OS_nav_item"><a href=""><img src="img/circle_01.png" alt=""></a><p class="OS_nav_text">JavaScript</p></li>
-              <li class="OS_nav_item"><a href=""><img src="img/circle_02.png" alt=""></a><p class="OS_nav_text">Bootstrap</p></li>
-              <li class="OS_nav_item"><a href=""><img src="img/circle_03.png" alt=""></a><p class="OS_nav_text">WordPress</p></li>
-              <li class="OS_nav_item"><a href=""><img src="img/circle_04.png" alt=""></a><p class="OS_nav_text">PhotoShop</p></li>
+              <li class="OS_nav_item"><img src="img/circle_01.png" alt=""><p class="OS_nav_text">JavaScript</p></li>
+              <li class="OS_nav_item"><img src="img/circle_02.png" alt=""><p class="OS_nav_text">Bootstrap</p></li>
+              <li class="OS_nav_item"><img src="img/circle_03.png" alt=""><p class="OS_nav_text">WordPress</p></li>
+              <li class="OS_nav_item"><img src="img/circle_04.png" alt=""><p class="OS_nav_text">PhotoShop</p></li>
+              <!-- aタグいらない -->
             </ul>
           </div>
         </div>    <!-- ← このclassにコンテンツ幅の指定と中央寄せ -->
@@ -92,7 +100,7 @@
         <div class="inner Sns-inner">
           <ul class="Sns_nav">
             <li class="Sns_nav_item"><a href="" class="Sns_nav_pic"><i class="fab fa-facebook-f"></i></a></li>
-            <li class="Sns_nav_item"><a href="" class="Sns_nav_pic"><i class="fas fa-basketball-ball"></i></a></li>
+            <li class="Sns_nav_item"><a href="" class="Sns_nav_pic"><i class="fab fa-dribbble"></i></a></li>
             <li class="Sns_nav_item"><a href="" class="Sns_nav_pic"><i class="fab fa-twitter"></i></a></li>
             <li class="Sns_nav_item"><a href="" class="Sns_nav_pic"><i class="fas fa-envelope"></i></a></li>
           </ul>
