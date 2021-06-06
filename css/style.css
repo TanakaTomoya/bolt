@@ -18,10 +18,13 @@
 
 .header{
   background-color: #fff;
-  padding: 15px 0;
   position: fixed;
   width: 100%;
   z-index: 1;
+}
+
+.header-inner{
+  padding: 15px 0;
 }
 
 .fa-bolt{
@@ -41,6 +44,10 @@
 
 .Contact-button:hover{
   color: #333;
+}
+
+.BurgerMenu{
+  display: none;
 }
 
 .main{
@@ -88,6 +95,7 @@
   font-size: 20px;
   line-height: 1.5;
   margin-top: 35px;
+  width: 750px;
 }
 
 .article-OurLatestWork{
@@ -105,6 +113,10 @@
 
 .PhotoGallery{
   margin-top: 40px;
+}
+
+.PhotoGallery a{
+  display: inline-block;
 }
 
 .PG_nav{
@@ -144,6 +156,7 @@
 .text-Email{
   font-size: 20px;
   line-height: 1.5;
+  width: 700px;
 }
 
 .Email-button{
@@ -237,130 +250,139 @@
   text-align: right;
 }
 
-@media screen and (max-width: 1197px) {
-  /* 959px以下に適用されるCSS（タブレット用） */
+@media screen and (max-width: 1199px) {
+  /* （タブレット用） */
+/* 　sptab共通 */
+  .inner{
+    width: 97%;
+  }
 
-.inner{
-  width: 97%;
-}
+  .WhatWeCanDo-inner{
+    display: block;
+    padding-bottom: 25px;
+  }
 
-.WhatWeCanDo-inner{
-  display: block;
-  padding-bottom: 25px;
-}
+  .WhatWeCanDo{
+    margin-top: 20px;
+  }
 
-.WhatWeCanDo{
-  margin-top: 20px;
-}
+  .WhatWeCanDo-comment{
+    width: 90%;
+    /* ％表記じゃないと画面崩れしてしまう */
+    margin: 35px auto;
+    margin-bottom: 0;
+  }
 
-.WhatWeCanDo-comment{
-  width: 1050px;
-  margin: 35px auto;
-  margin-bottom: 0;
-}
+  .PG_nav_item{
+    display: block;
+    margin: 0;
+  }
 
-.PG_nav_item{
-  display: block;
-  margin: 0;
-}
+  .PG_nav_item:nth-child(n+4){
+    margin-top: 0;
+  }
 
-.PG_nav_item:nth-child(n+4){
-  margin-top: 0;
-}
+  .PG_nav_item:nth-child(3n+4){
+    /* 数字の箇所を変数に帰る */
+    margin-top: 80px;
+  }
 
-.PG_nav_item:nth-child(4){
-  margin-top: 80px;
-}
+  .section-Email{
+    display: block;
+    margin-top: 80px;
+  }
 
-.section-Email{
-  display: block;
-  margin-top: 80px;
-}
+  .Email-button{
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 0;
+  }
 
-.Email-button{
-  display: inline-block;
-  margin-top: 40px;
-  margin-left: 0;
-}
+  .text-Email{
+    width: 95%;
+  }
 
-.OS_nav_item{
-  display: block;
-  margin-top: 88px;
-  margin-left: 0;
-}
+  .OS_nav_item{
+    display: block;
+    margin-top: 88px;
+    margin-left: 0;
+  }
 
-} /* 959px以下に適用されるCSS（タブレット用）終 */
+  .OS_nav_item:first-child{
+    margin-top: 0;
+  }
+} /* （タブレット用）終 */
 
 @media screen and (max-width: 767px) {
-  /* 480px以下に適用されるCSS（スマホ用） */
+  /* （スマホ用） */
 
-.Contact-button{
-  display: none;
-}
+  .Contact-button{
+    display: none;
+  }
 
-.BurgerMenu{
-  float: right;
-	position: relative;
-	width: 30px;
-  height: 20px;
-  padding: 10px;
-	cursor: pointer;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-.Burger_line{
-	position: absolute;
-	left: 10px;
-	width: 30px;
-	height: 3px;
-	background-color: #ddd;
-}
-.Burger_line1{
-	top: 11px;
-}
-.Burger_line2{
-	top: 19px;
-}
-.Burger_line3{
-	top: 27px;
-}
+  .BurgerMenu{
+    display: block;
+    float: right;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  .Burger_line{
+    position: absolute;
+    left: 10px;
+    width: 30px;
+    height: 3px;
+    background-color: #ddd;
+  }
+  .Burger_line1{
+    top: 11px;
+  }
+  .Burger_line2{
+    top: 19px;
+  }
+  .Burger_line3{
+    top: 27px;
+  }
 
-.main-title{
-  color: #74cfae;
-  font-size: 80px;
-}
+  .main-title{
+    color: #74cfae;
+    font-size: 80px;
+  }
 
-.title-inner{
-  padding-top: 160px;
-  padding-bottom: 130px;
-}
+  .title-inner{
+    padding-top: 160px;
+    padding-bottom: 130px;
+  }
 
-.sub-title{
-  color: #c0c0c0;
-  font-size: 30px;
-  margin-top: 20px;
-}
+  .sub-title{
+    color: #c0c0c0;
+    font-size: 30px;
+    margin-top: 20px;
+  }
 
-.WhatWeCanDo-comment{
-  font-size: 20px;
-  line-height: 1.5;
-  margin-top: 35px;
-  width: 480px;
-}
+  .WhatWeCanDo-comment{
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 35px;
+    width: 480px;
+  }
 
-.Sns-inner{
-  padding: 50px 0;
-  margin: 0;
-  width: 100%;
-}
+  .Sns-inner{
+    padding: 50px 0;
+    margin: 0;
+    width: 100%;
+  }
 
-.Sns_nav{
-  padding: 0 15px;
-}
+  .Sns_nav{
+    padding: 0 15px;
+  }
 
-.Sns_nav_item{
-  width: 100%;
-}
-  
-} /* 480px以下に適用されるCSS（スマホ用）終 */
+  .Sns_nav_item{
+    width: 100%;
+  } 
+} /* （スマホ用）終 */
